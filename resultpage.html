@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormResult</title>
+    <link rel="stylesheet" href="resultpage.css">
+    <link rel="icon" href="Images/unnamed-removebg-preview.jpg" type="image/logo1">
+</head>
+<body>
+    <script type="text/javascript">
+        var formData = location.search;
+        formData = formData.substring(1, formData.length);
+        while (formData.indexOf("+") != -1) {
+            formData = formData.replace("+", " ");
+        }
+        formData = unescape(formData);
+        var formArray = formData.split("&");
+        var para=new Array();
+    </script>
+    <article>
+        <div class="container">
+            <img src="Images/unnamed-removebg-preview.jpg">
+            <h1>You have submitted the following details:</h1>
+            <div class="content">
+                <p>Name: <span id="name"></span></p>
+                <p>Email: <span id="email"></span></p>
+                <p>Message: <span id="text"></span></p>
+            </div>
+        </div>
+        <h2>Thank you for your message! We will get back to you in 3 or less working days.</h2>
+    </article>
+    <div class="home-link">
+        <button class="btn-2"><a href="HomePage.html">Back to Home</a></button>
+    </div>
+    <script>
+        for (var i = 0; i < formArray.length; ++i){
+            para = formArray[i].split("=");
+
+            switch (para[0]) {
+                case "email":
+                    document.getElementById("email").innerHTML = para[1];
+                    break;
+                case "name":
+                    document.getElementById("name").innerHTML =para[1];
+                    break;
+                case "text":
+                    document.getElementById("text").innerHTML = para[1];
+                    break;
+            }
+
+        }
+    </script>
+</body>
+</html>
