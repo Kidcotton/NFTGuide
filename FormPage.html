@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="formpage.css">
+    <link rel="icon" href="Images/unnamed-removebg-preview.jpg" type="image/logo1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="Images/unnamed-removebg-preview.jpg" alt="picture of cardano NFT"
+                    id="logo1">Guide to Non-Fungible Token(NFT)</div>
+            <div class="links1">
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="AboutPage.html">Real Time Cryptocurrencies</a></li>
+                    <li><a href="FormPage.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="support">
+        <h1><u>NFTs Guide Support</u></h1>
+        <br>
+        <div class="formp">
+            <div class="container">
+                <div class="content">
+                    <div class="left-side">
+                        <div class="address details">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="topic">Address</div>
+                            <div class="text-one">Singapore, NYP</div>
+                            <div class="text-two">Singapore, Woodlands</div>
+                        </div>
+                        <div class="phone details">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="topic">Phone</div>
+                            <div class="text-one">+65 9876 5432</div>
+                            <div class="text-two">+65 9753 1234</div>
+                        </div>
+                        <div class="email details">
+                            <i class="fas fa-envelope"></i>
+                            <div class="topic">Email</div>
+                            <div class="text-one">NFTsGuide@gmail.com</div>
+                            <div class="text-two">info.NFTsGuide@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="topic-text">Send us a message</div>
+                        <p>If you have any quries related to NFTs or any trouble with the website.
+                            Please feel free to contact us! It will be our pleasure to help you.
+                        </p>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="25a33316-727c-45f0-8764-d70591f0f2c1">
+                            <div class="input-box">
+                                <label for="name"><input type="text" name="Name" id="name" placeholder="Enter your name"
+                                        required></label>
+                            </div>
+                            <div class="input-box">
+                                <label for="email"><input type="email" name="Email" id="email"
+                                        placeholder="Enter your email (www@gmail.com)" required></label>
+                            </div>
+                            <div class="input-box message-box">
+                                <label for="text"><textarea id="textarea" name="Text" id="text"
+                                        placeholder="Enter your message"></textarea></label>
+                            </div>
+                            <div class="button">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="logo01">
+        <img id="logo01" src="Images/unnamed-removebg-preview.jpg" alt="website logo">
+    </div>
+    <div class="membership">
+        <h2>Be part of the NFTs Guide.</h2>
+        <br>
+        <p>At only $10 SGD, you will be able to fully view our content.
+            <br>Furthermore, there will be exclusive
+            <br> content just for you.
+            Click here to join the membership now!
+        </p>
+        <br>
+        <div class="container01">
+            <button class="btn-1" onclick="payment()">Join Now!</button>
+        </div>
+    </div>
+    <br>
+    <div class="list">
+        <ul>
+            <li>Read member-only content</li>
+            <li>Support writers</li>
+            <li>Access our NFTs Guide Community</li>
+            <li>Person to Person Talks</li>
+            <li>Whitelist for NFTs Project</li>
+        </ul>
+    </div>
+    <script>
+        function payment() {
+            window.open("payment.html");
+        }
+    </script>
+    <footer>
+        <h5>J O I N &nbsp; U S &nbsp; O N &nbsp; S O C I A L &nbsp; M E D I A </h5>
+        <p>Join the Cardano Family and be one of the +15,000 Members in our community</p>
+        <div class="links">
+            <a href="https://youtube.com"><img src="Images/youtubelogo.png" alt="Youtube website"></a>
+            <a href="https://twitter.com"><img src="Images/twitterlogo.png" alt="twitter website"></a>
+            <a href="https://discord.com"><img src="Images/discordlogo.png" alt="discord website"></a>
+            <a href="https://medium.com"><img src="Images/mediumLogo.png" alt="medium website"></a>
+            <br>
+            <p>Youtube</p>
+            <p>Twitter</p>
+            <p>Discord</p>
+            <p>Medium</p>
+        </div>
+        <div id="copyright">
+            <p>&copy;2024 Chia Wei Yang's Work.</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

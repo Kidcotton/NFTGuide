@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main/Home Page</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="icon" href="Images/unnamed-removebg-preview.jpg" type="image/logo1">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="Images/unnamed-removebg-preview.jpg" alt="picture of cardano NFT"
+                    id="logo1">Guide to Non-Fungible Token(NFT)</div>
+            <div class="links1">
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="AboutPage.html">Real Time Cryptocurrencies</a></li>
+                    <li><a href="FormPage.html">Contact Us</a></li>
+                </ul>
+            </div>        
+        </div>
+    </nav>
+    </div>
+    <h1>This is a Beginner Guide to <span><a href="https://cardano.org" alt="A link to cardano page"
+                id="link1">Cardano</a></span> NFT</h1>
+    <div id="banner">
+        <img src="Images/3ee441f40fe395a2e98eea1df7cf8816b0fca3d5d164893596ce306d-banner" alt="A NFT banner">
+    </div>
+
+    <br>
+
+    <div class="content">
+        <h2>What are NFTs?</h2>
+        <br>
+        <p>NFTs, or Non-Fungible Tokens, are uniquie digital assests that represent ownership or proof of authenticity
+            <br>of a particular item or piece of content. NFTs are normally built on blockchain technology,
+            allowing for
+            <br>secure transactions and proof of ownership without the need for intermediaries
+        </p>
+    </div>
+    <br>
+    <h3>Compatible wallets for Cardano NFTs</h3>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Images/How-to-Use-Nami-Wallet-Full-Setup-Guide.webp" style="width:100%">
+            <div class="text">Nami-Wallet. Enable by using chrome-extensions.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="Images/maxresdefault.jpg" style="width:100%">
+            <div class="text">Eternl-Wallet. Enable by using chrome-extensions.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="Images/cover.png" style="width:100%">
+            <div class="text">Hardware-Wallet/Physical Wallet. Can be purchase online. Safest Wallet.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <div class="video_hold">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-rB8_3fTHME?si=SOyz9KLugMBFfYQz"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h4>Benefits of Holding<br><span>NFTs</span></h4>
+        <p>Note that different NFTs have different utility, hence different benefits.</p>
+    </div>
+    <br>
+    <div class="fullpageTabs">
+        <button class="tablink" onclick="openPage('Howto',this,'#101C2C')" id="defaultOpen">How to<br>
+            <hr>
+        </button>
+        <button class="tablink" onclick="openPage('Lookouts',this,'#101C2C')">Look outs<br>
+            <hr>
+        </button>
+        <button class="tablink" onclick="openPage('Mints',this,'#101C2C')">Minting<br>
+            <hr>
+        </button>
+        <button class="tablink" onclick="openPage('Listing',this,'#101C2C')">Listing<br>
+            <hr>
+        </button>
+
+        <div id="Howto" class="tabcontent">
+            <h4>How to exchange Crypto</h4>
+            <hr>
+            <ul>
+                <li>Go to any Crypto exchange app/website (Personally uses <a
+                        href="https://crypto.com/sg">Crypto.com</a>)</li>
+                <br>
+                <li>Remember to check wallet address carefully</li>
+                <br>
+                <li>Send the desired amount to the exchange app/website</li>
+                <br>
+                <li>P2P(Person to person trading)</li>
+                <br>
+                <li>To exchange back to currencies, just send the desired crypto amount to the exchange</li>
+            </ul>
+        </div>
+        <div id="Lookouts" class="tabcontent">
+            <h4>LookOuts for NFTs</h4>
+            <hr>
+            <ul>
+                <li>check out famous NFTs people on <a href="https://twitter.com">Twitter</a></li>
+                <br>
+                <li>Join a "alpha group" on discord. They will be the first to send out crucial information about new
+                    NFTs project</li>
+                <br>
+                <li>NFTs friends. Make friends along the way as they can also inform you about NFTs project</li>
+                <br>
+                <li>NFTs Calendar. Certain NFT's marketplace will have a calendar for future mints</li>
+                <br>
+                <li>Youtube. NFTs Youtubers will have early information</li>
+            </ul>
+        </div>
+        <div id="Mints" class="tabcontent">
+            <h4>Minting NFTs</h4>
+            <hr>
+            <ul>
+                <li>Here are the following types of NFT mints:
+                    <ol>
+                        <br>
+                        <li>Pro-Rata Mint -The community will have a period of time to send in their desired amount, if
+                            the max cap is at 1million ada, every individual will receive a small percentage of refund
+                        </li>
+                        <br>
+                        <li>FSFC(First come first serve) Mint -When the mint opens up, the fastest transcation to go
+                            through will be able to get their NFTs</li>
+                    </ol>
+                </li>
+                <br>
+                <li>WhiteList. This is very important as you will be able to mint your NFTs early and for certain
+                    project the minting price will be cheaper</li>
+                <br>
+                <li>Try to use a Ethernet cable as this can increase your wifi speed. With FSFC mints, your transcation
+                    needs to be fast. Hence, ethernet cable is your best friend</li>
+                <br>
+                <li>Do your own research before minting any NFT projects as they will be rug-pulls(Creator taking the
+                    money and running) or you losing money</li>
+                <br>
+                <li>Not all influencer will have the correct read. Always do your research about the project that you
+                    are minting</li>
+            </ul>
+        </div>
+        <div id="Listing" class="tabcontent">
+            <h4>Listing NFTs</h4>
+            <hr>
+            <ul>
+                <li>To list your NFTs on the marketplace <a href="https://jpg.store">jpg.store</a> is the best
+                    marketplace to list NFTs</li>
+                <br>
+                <li>Royalties. NFTs project will take up some royalties(small percentages of your listing amount) when
+                    you sell their NFTs. This is to help support the project</li>
+                <br>
+                <li>Offers. You can receive offers for your listing NFTs or you can offer to buy NFTs.This is like an
+                    auction</li>
+                <br>
+                <li>Floor= lowest price</li>
+                <br>
+                <li>Volume = total amount of ADA traded across the project</li>
+            </ul>
+        </div>
+        <script>
+            function openPage(pageName, elmnt, color) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+                document.getElementById(pageName).style.display = "block";
+                elmnt.style.backgroundColor = color;
+            }
+            document.getElementById("defaultOpen").click();
+        </script>
+    </div>
+    <br>
+    <footer>
+        <h5>J O I N &nbsp; U S &nbsp; O N &nbsp; S O C I A L &nbsp; M E D I A </h5>
+        <p>Join the Cardano Family and be one of the +15,000 Members in our community</p>
+        <div class="links">
+            <a href="https://youtube.com"><img src="Images/youtubelogo.png" alt="Youtube website"></a>
+            <a href="https://twitter.com"><img src="Images/twitterlogo.png" alt="twitter website"></a>
+            <a href="https://discord.com"><img src="Images/discordlogo.png" alt="discord website"></a>
+            <a href="https://medium.com"><img src="Images/mediumLogo.png" alt="medium website"></a>
+            <br>
+            <p>Youtube</p>
+            <p>Twitter</p>
+            <p>Discord</p>
+            <p>Medium</p>
+        </div>
+        <div id="copyright">
+            <p>&copy;2024 Chia Wei Yang's Work.</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
