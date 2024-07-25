@@ -303,11 +303,16 @@ footer p{
     }
 }
 @media (max-width:910px){
-    .links1 ul li{
-        padding:15px;
-        padding-left: 300px;
-    }
     h1{
         padding-top: 250px;
+    }
+}
+@media (max-width:910px){
+    .navbar{
+        margin: -30px;
+    }
+    .links1 a{
+        display: inline-block;
+
     }
 }
